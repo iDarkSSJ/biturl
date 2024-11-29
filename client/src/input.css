@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-short {
+    @apply text-base w-full bg-transparent border-2 border-opacity-30 border-white rounded-md focus:outline-none p-3 focus-visible:border-cyan-600;
+  }
+
+  .btn {
+    @apply p-3 text-black bg-white rounded-md hover:bg-slate-400 transition-colors ease-linear text-nowrap;
+  }
+
+  .box {
+    @apply sm:rounded-2xl sm:bg-[#121822] rounded-none p-6 sm:px-[6rem] flex flex-col gap-4 text-2xl sm:text-3xl;
+  }
+
+  .link {
+    @apply text-blue-400 hover:text-blue-300 hover:underline whitespace-nowrap overflow-hidden text-ellipsis max-w-full;
+  }
+}
