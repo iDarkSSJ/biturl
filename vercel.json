@@ -12,12 +12,12 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "server/index.js"
+      "src": "/(.*)\\.(js|css|html|png|jpg|jpeg|gif|svg|webp)$",
+      "dest": "client/src/$1"
     },
     {
-      "src": "/(.*)\\.(js|css|html|png|jpg|jpeg|gif|svg)$",
-      "dest": "client/src/$1"
+      "src": "/(.*)",
+      "dest": "server/src/index.js"
     }
   ]
 }
