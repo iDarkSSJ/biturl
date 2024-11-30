@@ -11,8 +11,7 @@ app.use(morgan('dev'))
 app.use(express.json())
 // app.use(cors())
 
-app.use('/static', express.static(path.join(process.cwd(), 'client', 'src')));
-
+app.use('/static', express.static(path.join(process.cwd(), 'client', 'src')))
 
 app.use(router)
 
@@ -24,7 +23,7 @@ app.get('*', (req, res, next) => {
 })
 
 app.get('/', (req, res) => {
-  const htmlPath = path.join(process.cwd(), '..', 'client', 'src', 'index.html')
+  const htmlPath = path.join(process.cwd(), 'client', 'src', 'index.html')
   fs.readFile(htmlPath, (err, data) => {
     if (err) {
       console.error('Error al leer index.html:', err)
