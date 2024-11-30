@@ -12,7 +12,7 @@
   ],
   "routes": [
     {
-      "src": "/(.*)\\.(js|css|html|png|jpg|jpeg|gif|svg|webp)$",
+      "src": "/static/(.*)",
       "dest": "/client/src/$1"
     },
     {
