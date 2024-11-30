@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/(.*)\\.(js|css|html|png|jpg|jpeg|gif|svg|webp)$",
-      "dest": "client/src/$1"
+      "dest": "/client/src/$1"
     },
     {
       "src": "/(.*)",

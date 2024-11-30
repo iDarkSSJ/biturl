@@ -11,7 +11,8 @@ app.use(morgan('dev'))
 app.use(express.json())
 // app.use(cors())
 
-app.use('/static', express.static(path.join(process.cwd(), '..', 'client', 'src')))
+app.use('/static', express.static(path.join(process.cwd(), 'client', 'src')));
+
 
 app.use(router)
 
