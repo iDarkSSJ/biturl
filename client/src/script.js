@@ -254,7 +254,7 @@ const createCustomUrlForm = () => {
   const urlInput = createElement("input", ["input-short"], {
     id: "custom-url-input",
     type: "text",
-    placeholder: "Enter the link here",
+    placeholder: "Must include http(s)://",
     autocomplete: "off",
     required: "true",
   })
@@ -310,7 +310,7 @@ const createNormalUrlForm = () => {
     {
       id: "normal-url-input",
       type: "text",
-      placeholder: "Enter the link here",
+      placeholder: "Must include http(s)://",
       required: "true",
     }
   )
